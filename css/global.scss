@@ -4,10 +4,6 @@ html {
     width: 100vw;
     height: 100vh;
     background-color: pink;
-    // background-image: url('../assets/rainbow.svg');
-    // background-position: top;
-    // background-repeat: repeat;
-    // background-size: cover;
 }
 
 body {
@@ -19,9 +15,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
+    @include marginCenter;
     margin-top: 16em;
+
 }
 
 h3 {
@@ -31,69 +27,62 @@ h3 {
 .whole-polaroid {
     background: white;
     height: fit-content;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    text-transform: capitalize;
+
+    &:hover {
+        transition: 4s;
+        transform: rotate3d(0, 4, 0, -1turn);
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, violet, indigo);
+    }
 
 }
 
 .polaroid-top {
     width: 164px;
     height: 160px;
-    border: 5px solid white;
-    border-right: 12px solid white;
-    border-left: 12px solid white;
+    @include borders;
+    @include bordersSides;
     margin-top: 14px;
 }
 
 .polaroid-bottom {
     background-color: white;
     width: 10rem;
-    border: 5px solid white;
-
+    @include borders;
 }
 
 .red {
-    background-image: linear-gradient(to right, red, orange);
     background-image: url('../assets/puerto\ vallarta.jpg');
-    background-size: cover;
+    @include centerImg;
 }
 
 .orange {
-    background-image: linear-gradient(to right, orange, yellow);
     background-image: url('../assets/20200322_213304.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centerImg;
 }
 
 .yellow {
-    background-image: linear-gradient(to right, yellow, green);
     background-image: url('../assets/20200809_204009.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centerImg;
 }
 
 .green {
-    background-image: linear-gradient(to right, green, blue);
     background-image: url('../assets/20200821_093310.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centerImg;
 }
 
 .blue {
-    background-image: linear-gradient(to right, blue, indigo);
     background-image: url('../assets/B7DEA8A3-71CC-4722-8A43-F9458D21BB6B.JPG');
-    background-size: cover;
-    background-position: center;
+    @include centerImg;
 }
 
 .indigo {
-    background-image: linear-gradient(to right, indigo, violet);
     background-image: url('../assets/Screen\ Shot\ 2016-06-24\ at\ 1.41.20\ PM.png');
-    background-size: cover;
-    background-position: center;
+    @include centerImg;
 }
 
 .violet {
-    background-image: linear-gradient(to right, violet, black);
     background-image: url('../assets/20200821_093310.jpg');
-    background-size: cover;
-    background-position: center;
+    @include centerImg;
 }
