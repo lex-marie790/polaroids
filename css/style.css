@@ -1,0 +1,95 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: pink;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16em;
+}
+
+h3 {
+  text-align: center;
+}
+
+.whole-polaroid {
+  background: white;
+  height: fit-content;
+}
+
+.polaroid-top {
+  width: 164px;
+  height: 160px;
+  border: 5px solid white;
+  border-right: 12px solid white;
+  border-left: 12px solid white;
+  margin-top: 14px;
+}
+
+.polaroid-bottom {
+  background-color: white;
+  width: 10rem;
+  border: 5px solid white;
+}
+
+.red {
+  background-image: linear-gradient(to right, red, orange);
+  background-image: url("../assets/puerto vallarta.jpg");
+  background-size: cover;
+}
+
+.orange {
+  background-image: linear-gradient(to right, orange, yellow);
+  background-image: url("../assets/20200322_213304.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.yellow {
+  background-image: linear-gradient(to right, yellow, green);
+  background-image: url("../assets/20200809_204009.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.green {
+  background-image: linear-gradient(to right, green, blue);
+  background-image: url("../assets/20200821_093310.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.blue {
+  background-image: linear-gradient(to right, blue, indigo);
+  background-image: url("../assets/B7DEA8A3-71CC-4722-8A43-F9458D21BB6B.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+.indigo {
+  background-image: linear-gradient(to right, indigo, violet);
+  background-image: url("../assets/Screen Shot 2016-06-24 at 1.41.20 PM.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.violet {
+  background-image: linear-gradient(to right, violet, black);
+  background-image: url("../assets/20200821_093310.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=style.css.map */
